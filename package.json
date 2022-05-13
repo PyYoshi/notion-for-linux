@@ -1,0 +1,24 @@
+{
+  "name": "notion-for-linux",
+  "version": "0.0.1",
+  "description": "Notion App for Linux",
+  "main": "main.js",
+  "dependencies": {
+    "electron-store": "^8.0.1"
+  },
+  "devDependencies": {
+    "electron": "18.2.3",
+    "electron-builder": "23.0.3"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build"
+  },
+  "build": {
+    "productName": "Notion",
+    "linux": {
+      "icon": "build/icon.png",
+      "category": "Utility"
+    }
+  }
+}
